@@ -1,0 +1,11 @@
+.ranking {
+  position: fixed;
+  left: 100%;
+}
+
+.ranking .icone-ranking {
+  position: absolute;
+  right: 0%;
+  background-color: #fff;
+  padding: 5px 20px
+}

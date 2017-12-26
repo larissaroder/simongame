@@ -1,0 +1,42 @@
+<html class="background" xmlns="http://www.w3.org/1999/xhtml">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <link rel="stylesheet" href="simon-game.css">
+        <link rel="stylesheet" href="ranking.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <main class="flex-column"> 
+            <div id="game" class="flex-column game-container state_initial">
+                <div id="title" class="title-score title">
+                    <span>Simon Game</span>
+                </div>
+                <div  class="flex-row background-game">
+                    <div id="play" class="box_pre">
+                        <i class="fa fa-play fa-1x" aria-hidden="true"></i>
+                    </div>
+                    <div class="button_container">
+                        <div id="red" class="box red"></div>
+                        <div id="blue" class="box blue"></div>
+                        <div id="yellow"class="box yellow"></div>
+                        <div id="green" class="box green"></div>
+                    </div>
+                </div>
+                <div class="title-score score">
+                    <span id="score">Score: 0</span>
+                </div>
+            </div>
+            <div class="ranking" id="ranking">
+                <div class="icone-ranking">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </main>
+   
+    </body>
+    <script src="create-game.js"></script>
+    <script src="play-game.js"></script>
+    <script src="app.js"></script>
+</html>
