@@ -28,9 +28,9 @@ const game = {
             time = 1000;
         }
         this.current = document.getElementById(field);
-        this.current.classList.add("active-"+field);
+        this.current.classList.add('active-'+field);
         setTimeout(() => {
-            this.current.classList.remove("active-"+field);
+            this.current.classList.remove('active-'+field);
         }, time);
     }
 }

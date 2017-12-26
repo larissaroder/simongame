@@ -10,20 +10,16 @@ play.addEventListener('click', () => {
   game.newGame();
 });
 
-red.addEventListener('click', () => {
-  playGame.stage(RED);
-});
+red.addEventListener('click', () => 
+  playGame.stage(RED));
 
-green.addEventListener('click', () => {
-  playGame.stage(GREEN);
-});
+green.addEventListener('click', () =>
+  playGame.stage(GREEN));
 
-yellow.addEventListener('click', () => {
-  playGame.stage(YELLOW);
-});
+yellow.addEventListener('click', () =>
+  playGame.stage(YELLOW));
 
-blue.addEventListener('click', () => {
-  playGame.stage(BLUE);
-});
+blue.addEventListener('click', () =>
+  playGame.stage(BLUE));
 
   
