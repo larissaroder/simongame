@@ -1,0 +1,70 @@
+
+@import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rancho', cursive;
+}
+.flex-column {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.game-container {
+  height: 50%;
+  width: 50%;
+  flex: 0 0 50%;
+}
+
+.flex-row {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title {
+    font-size: 6vw;
+    
+  }
+  
+.score {
+  height: 12%;
+  width: 35%;
+  background-color:#7B68EE;
+  box-shadow: 10px 10px 5px #D3D3D3;
+  text-align: center;
+  border-radius: 0% 0% 75% 75%;
+  font-size: 2vw;
+}  
+
+.background-game {
+  border-radius: 5%;
+  background-color:#7B68EE;
+  height: 100%;
+}
+
+.background-pre-game {
+  border-radius: 5%;
+  background-color:whitesmoke;
+}
+
+.background{ 
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a7cfdf+0,23538a+100;Blue+3d+%238 */
+  background: rgb(167,207,223); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+}

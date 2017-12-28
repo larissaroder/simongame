@@ -22,10 +22,10 @@ const playGame = {
         current.classList.add('after_game');
         let gameOver = setInterval(() => {
             current.classList.remove('after_game');
-        }, 1000);
+        }, TIME_OUT);
         setTimeout(() => {
             clearInterval(gameOver);
             current.classList.add('after_game_over');
-        }, 1000);
+        }, TIME_OUT);
     }
 }

@@ -1,0 +1,53 @@
+.state_initial .box_pre {
+  display: block;
+}
+
+.state_in_game .button_container {
+  display: flex;
+}
+
+.game_over {
+  display: none;
+  padding: 6%;
+  transition: all .3s ease-in-out;
+  font-size: 5em;
+  color: grey;
+  text-shadow: 1px 1px 1px black;
+}
+
+.after_game .game_over {
+  display: block;
+}
+
+.input_score {
+  display: none;
+  padding: 6%;
+  transition: all .3s ease-in-out;
+  font-size: 5em;
+  color: grey;
+  text-shadow: 1px 1px 1px black;
+  flex: 1;
+  flex-basis: 50px;
+  justify-content: space-around;
+}
+
+.after_game_over .input_score{
+  display: block;
+}
+
+.name_input {
+  height: 20%;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0px 30px;
+  color: #6775c4;
+  vertical-align: middle;
+}
+
+.ranking_button {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #8C9EFF;
+}

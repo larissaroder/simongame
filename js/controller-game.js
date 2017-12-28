@@ -22,10 +22,10 @@ const game = {
          if (i >= this.currentGame.length) {
            clearInterval(moves);
          }
-       }, 1200);
+       }, INTERVAL);
     }, playGame(field, time) {
         if (time == undefined) {
-            time = 1000;
+            time = TIME_OUT;
         }
         this.current = document.getElementById(field);
         this.current.classList.add('active-'+field);

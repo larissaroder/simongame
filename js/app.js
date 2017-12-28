@@ -1,8 +1,3 @@
-const RED = 'red';
-const YELLOW = 'yellow';
-const BLUE = 'blue';
-const GREEN = 'green';
-
 play.addEventListener('click', () => {
   document.getElementById('game').classList.remove('state_initial');
   document.getElementById('game').classList.add('state_in_game');
