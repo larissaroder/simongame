@@ -29,7 +29,7 @@
                     </div>
                     <div id="inputScore" class="input_score">
                         <input type="text" class="name_input" maxlength="17" id="nameInput">
-                            <button class="ranking_button" id="ranking">
+                            <button class="ranking_button" id="addScoreRanking">
                               <i class="fa fa-trophy fa-4x"></i>
                             </button>
                     </div>
@@ -38,11 +38,15 @@
                     <span id="score">Score: 0</span>
                 </div>
             </div>
-            <div class="ranking" id="ranking">
-                <div class="icone-ranking">
-                    <i class="fa fa-trophy" aria-hidden="true"></i>
+            <div class="ranking-panel" id="rankingPanel">
+                <div class="tab">
+                  <i class="fa fa-trophy" aria-hidden="true"></i>
                 </div>
-
+                <div class="panel">
+                  <h5 class="title">Ranking</h5>
+                  <div class="ranking-names" id="rankingNames">
+                  </div>
+                </div>
             </div>
         </main>
    
@@ -50,5 +54,6 @@
     <script src="js/constants.js"></script>
     <script src="js/controller-game.js"></script>
     <script src="js/play-game.js"></script>
+    <script src="js/ranking.js"></script>
     <script src="js/app.js"></script>
 </html>

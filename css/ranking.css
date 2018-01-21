@@ -1,11 +1,38 @@
-.ranking {
+.ranking-panel {
   position: fixed;
   left: 100%;
+  transition: all .2s ease-in;
+  cursor: pointer;
 }
 
-.ranking .icone-ranking {
+.ranking-panel.open {
+  transform: translateX(-100%);
+}
+.ranking-panel .tab {
   position: absolute;
-  right: 0%;
+  right: 100%;
   background-color: #fff;
-  padding: 5px 20px
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.ranking-panel .panel {
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ranking-panel .panel .title{
+  text-align: center;
+  margin: 0px;
+  color: #212121;
+  font-size: 3vw;
+}
+
+.ranking-names {
+  list-style: none;
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
 }
