@@ -9,6 +9,7 @@ const ranking = {
             });
         }
     },addRanking() {
+        this.rankingList = [];
         let score = game.newScore -1;
         let name = document.getElementById('nameInput').value;
         let list = document.getElementById('rankingNmes');
@@ -18,8 +19,9 @@ const ranking = {
         this.rankingList.forEach((r) => {
             this._addHtmlList(r);
         });
+        document.getElementById('nameInput').value = '';
     }, _addHtmlList(r) {
-        let result = `<span>${r.name} - ${r.score} </span>`;
+        let result = `<p>${r.name} - ${r.score} </p>`;
         let rankingNames = document.getElementById('rankingNames');
         rankingNames.innerHTML += result;
     }
